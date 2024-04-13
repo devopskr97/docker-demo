@@ -25,7 +25,7 @@ pipeline{
 		}
 		stage ("Docker container status"){
 			steps{
-				Script{
+				script{
 					sh "sudo docker ps"
 				}
 			}
