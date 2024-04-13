@@ -19,7 +19,7 @@ pipeline{
 		stage ("Docker run container"){
 			steps{
 				script{
-					sh "sudo docker run -d -p 5000:5000 demo"
+					sh "sudo docker run -d -p 3200:3200 demo"
 				}
 			}
 		}
