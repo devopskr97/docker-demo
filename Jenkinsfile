@@ -19,7 +19,7 @@ pipeline{
 		stage ("Docker run container"){
 			steps{
 				script{
-					sh "sudo docker run -d -p 8080 demo"
+					sh "sudo docker run -d -p 80:80 demo"
 				}
 			}
 		}
