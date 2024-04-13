@@ -1,10 +1,10 @@
 pipeline{
 	agent { label 'docker'}
 	stages{
-		stage("docker container status"){
+		stage("git checkout"){
 			steps{
 				script{
-					sh " sudo docker ps "
+					git 'https://github.com/devopskr97/docker-demo.git' 
 				}
 			}	
 		
